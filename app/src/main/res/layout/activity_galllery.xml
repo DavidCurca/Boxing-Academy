@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".GallleryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/homeBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inconsolata"
+                android:text="Pantera Boxing Academy - Galerie"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reviewView"
+            android:layout_below="@+id/homeBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="253dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lineView"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="11dp">
+
+                            <ImageView
+                                android:id="@+id/fotografie1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/foto1" />
+
+                            <ImageView
+                                android:id="@+id/fotografie2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie1"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie1"
+                                android:src="@drawable/foto2" />
+
+                            <ImageView
+                                android:id="@+id/fotografie3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie2"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie2"
+                                android:src="@drawable/foto3" />
+
+                            <ImageView
+                                android:id="@+id/fotografie4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie3"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie3"
+                                android:src="@drawable/foto4" />
+
+                            <ImageView
+                                android:id="@+id/fotografie5"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie4"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie4"
+                                android:src="@drawable/foto5" />
+
+                            <ImageView
+                                android:id="@+id/fotografie6"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/fotografie1"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/foto6" />
+
+                            <ImageView
+                                android:id="@+id/fotografie7"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie6"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie6"
+                                android:src="@drawable/foto7" />
+
+                            <ImageView
+                                android:id="@+id/fotografie8"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie7"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie7"
+                                android:src="@drawable/foto8" />
+
+                            <ImageView
+                                android:id="@+id/fotografie9"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie8"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie8"
+                                android:src="@drawable/foto9" />
+
+                            <ImageView
+                                android:id="@+id/fotografie10"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie9"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie9"
+                                android:src="@drawable/foto10" />
+
+                            <ImageView
+                                android:id="@+id/fotografie11"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/fotografie6"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/foto11" />
+
+                            <ImageView
+                                android:id="@+id/fotografie12"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie11"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie11"
+                                android:src="@drawable/foto12" />
+
+                            <ImageView
+                                android:id="@+id/fotografie13"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie12"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie12"
+                                android:src="@drawable/foto13" />
+
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/fotografie1"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="20dp">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/fotografie6"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="20dp">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie6"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie6">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie7"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie7">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie11"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie11">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie12"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie12">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie8"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie8">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie9"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie9">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie1"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie1">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie2"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie2">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie4"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie4">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie3"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie3">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Fotografii"
+                            android:textSize="17sp" />
+
+                        <View
+                            android:id="@+id/lineView"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="8dp"
+                            android:background="#a6a6a6" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="191dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lineView2"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="11dp">
+
+                            <ImageView
+                                android:id="@+id/fotografie14"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/foto14" />
+
+                            <ImageView
+                                android:id="@+id/fotografie15"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie14"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie14"
+                                android:src="@drawable/foto15" />
+
+                            <ImageView
+                                android:id="@+id/fotografie16"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie15"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie15"
+                                android:src="@drawable/foto16" />
+
+                            <ImageView
+                                android:id="@+id/fotografie17"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie16"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie16"
+                                android:src="@drawable/foto17" />
+
+                            <ImageView
+                                android:id="@+id/fotografie18"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie17"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie17"
+                                android:src="@drawable/foto18" />
+
+                            <ImageView
+                                android:id="@+id/fotografie19"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/fotografie18"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/foto19" />
+
+                            <ImageView
+                                android:id="@+id/fotografie20"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie19"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie19"
+                                android:src="@drawable/foto20" />
+
+                            <ImageView
+                                android:id="@+id/fotografie21"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie20"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie20"
+                                android:src="@drawable/foto21" />
+
+                            <ImageView
+                                android:id="@+id/fotografie22"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie21"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie21"
+                                android:src="@drawable/foto22" />
+
+                            <ImageView
+                                android:id="@+id/fotografie23"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie22"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie22"
+                                android:src="@drawable/foto23" />
+
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/fotografie14"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="20dp">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie19"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie19">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie20"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie20">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie21"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie21">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie22"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie22">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie14"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie14">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie15"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie15">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie17"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie17">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignTop="@+id/fotografie16"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/fotografie16">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:background="#000000" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="#000000" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Clipuri Video"
+                            android:textSize="17sp" />
+
+                        <View
+                            android:id="@+id/lineView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="8dp"
+                            android:background="#a6a6a6" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

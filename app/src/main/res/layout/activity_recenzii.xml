@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".RecenziiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/homeBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inconsolata"
+                android:text="Pantera Boxing Academy - Recenzii"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reviewView"
+            android:layout_above="@+id/buttonView"
+            android:layout_below="@+id/homeBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/inconsolata"
+                android:text="Pagina 1 din 1"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <GridLayout
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:visibility="invisible"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/star11"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="25dp"
+                            android:src="@drawable/whole" />
+
+                        <ImageView
+                            android:id="@+id/star12"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/star11"
+                            android:src="@drawable/whole" />
+
+                        <ImageView
+                            android:id="@+id/star13"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/star12"
+                            android:src="@drawable/whole" />
+
+                        <ImageView
+                            android:id="@+id/star14"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/star13"
+                            android:src="@drawable/whole" />
+
+                        <ImageView
+                            android:id="@+id/star15"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/star14"
+                            android:src="@drawable/whole" />
+
+                        <TextView
+                            android:id="@+id/mesaj1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="109dp"
+                            android:layout_below="@+id/nume1"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="14dp"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTexTextVie"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/nume1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/star15"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="AAAAAAAAAAAAAAAAAAAAA"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:visibility="invisible"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/star21"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="25dp"
+                            android:src="@drawable/whole" />
+
+                        <ImageView
+                            android:id="@+id/star22"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/star21"
+                            android:src="@drawable/whole" />
+
+                        <ImageView
+                            android:id="@+id/star23"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/star22"
+                            android:src="@drawable/whole" />
+
+                        <ImageView
+                            android:id="@+id/star24"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/star23"
+                            android:src="@drawable/whole" />
+
+                        <ImageView
+                            android:id="@+id/star25"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/star24"
+                            android:src="@drawable/whole" />
+
+                        <TextView
+                            android:id="@+id/mesaj2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="139dp"
+                            android:layout_below="@+id/nume2"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTexTextVie"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/nume2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/star25"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Nume Aici"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp">
+
+            <Button
+                android:id="@+id/writeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/inconsolata"
+                android:text="SCRIE O RECENZIE"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/prevButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@+id/writeButton"
+                android:fontFamily="@font/inconsolata"
+                android:text="PREV"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/writeButton"
+                android:fontFamily="@font/inconsolata"
+                android:text="NEXT"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

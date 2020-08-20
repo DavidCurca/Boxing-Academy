@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/homeBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inconsolata"
+                android:text="Pantera Boxing Academy - Acasa"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </RelativeLayout>
+            <GridLayout
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/topBar"
+                android:layout_gravity="center"
+                android:columnCount="1"
+                android:rowCount="1"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inconsolata"
+                        android:text="GENERAL"
+                        android:textSize="17sp">
+
+                    </TextView>
+
+                    <View
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#a6a6a6">
+
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/infoImage"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/info">
+
+                    </ImageView>
+
+                        <TextView
+                            android:id="@+id/infoText"
+                            android:layout_width="193dp"
+                            android:layout_height="115dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="52dp"
+                            android:layout_toRightOf="@+id/infoImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Boxul presupune în special folosirea mâinilor, dar și a unor mișcări agile ale picioarelor, capului, ceea ce înseamnă că efortul fizic depus va fi intens."
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="158dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/phoneImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="60dp"
+                        android:src="@drawable/phone">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inconsolata"
+                        android:text="DATE DE CONTACT"
+                        android:textSize="17sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/phoneText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@+id/phoneImage"
+                        android:fontFamily="@font/inconsolata"
+                        android:text="0770 272 266"
+                        android:textColor="#000000"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="8dp"
+                        android:background="#a6a6a6">
+
+                    </View>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="12dp">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/clockImage"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="60dp"
+                            android:src="@drawable/clock">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imgButton"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/clockText"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@+id/clockHour"
+                            android:src="@drawable/up">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/clockText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_toRightOf="@+id/clockImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Deschis acum"
+                            android:textColor="#32CD32"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/clockHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignStart="@+id/clockText"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_toRightOf="@+id/clockImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="09:00 - 16:00"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="PROGRAM"
+                            android:textSize="17sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/luniText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/clockHour"
+                            android:layout_alignStart="@+id/clockHour"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toRightOf="@+id/clockImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Luni: "
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/martiText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/luniText"
+                            android:layout_alignStart="@+id/luniText"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/clockImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Marti: "
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/mieruriText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/martiText"
+                            android:layout_alignStart="@+id/martiText"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/clockImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Mieruri: "
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/joiText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mieruriText"
+                            android:layout_alignStart="@+id/mieruriText"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/clockImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Joi: "
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/vineriText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/joiText"
+                            android:layout_alignStart="@+id/joiText"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/clockImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Vineri: "
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/sambataText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/vineriText"
+                            android:layout_alignStart="@+id/vineriText"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/clockImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Sambata: "
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/duminicaText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_below="@+id/sambataText"
+                            android:layout_alignStart="@+id/sambataText"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/clockImage"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="Duminica: "
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/luniHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/luniText"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_toRightOf="@+id/luniText"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="09:00 - 19:00"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/martiHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/martiText"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_toRightOf="@+id/luniText"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="09:00 - 19:00"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/miercuriHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/mieruriText"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_toRightOf="@+id/luniText"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="09:00 - 19:00"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/joiHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/joiText"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_toRightOf="@+id/luniText"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="09:00 - 19:00"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/vineriHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/vineriText"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_toRightOf="@+id/luniText"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="09:00 - 19:00"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/sambataHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/sambataText"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_toRightOf="@+id/luniText"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="09:00 - 16:00"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/duminicaHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sambataHour"
+                            android:layout_alignEnd="@+id/sambataHour"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="0dp"
+                            android:fontFamily="@font/inconsolata"
+                            android:text="INCHIS"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="8dp"
+                            android:background="#a6a6a6">
+
+                        </View>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

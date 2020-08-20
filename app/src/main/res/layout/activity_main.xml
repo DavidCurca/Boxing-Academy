@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/topBar"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <TextView
+                android:id="@+id/titlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/inconsolata"
+                android:text="Pantera Boxing Academy"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titlu"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/inconsolata"
+                android:text="Club Sportiv"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/circle_cropped">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/topBar"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        <GridLayout
+            android:layout_below="@+id/topBar"
+            android:layout_gravity="center"
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="60dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/label1"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/home"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/inconsolata"
+                        android:text="Acasa"
+                        android:textColor="#6f6f6f"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="60dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/label2"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/review_icon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/inconsolata"
+                        android:text="Recenzii"
+                        android:textColor="#6f6f6f"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="60dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/label3"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/inconsolata"
+                        android:text="Locatie"
+                        android:textColor="#6f6f6f"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="60dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/label4"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/gallery"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/inconsolata"
+                        android:text="Galerie"
+                        android:textColor="#6f6f6f"
+                        android:textSize="24sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
