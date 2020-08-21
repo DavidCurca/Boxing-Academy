@@ -31,12 +31,24 @@
 
     </RelativeLayout>
 
+        <!-- adUnitId = ca-app-pub-8713196903791104/8921149429 -->
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/reviewAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+
         <RelativeLayout
+            android:layout_above="@+id/reviewAd"
             android:id="@+id/formView"
             android:layout_below="@+id/homeBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
 
             <RelativeLayout
                 android:layout_centerInParent="true"

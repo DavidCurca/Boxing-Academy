@@ -16,6 +16,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -30,6 +35,7 @@ public class NewReviewActivity extends AppCompatActivity {
     private Button plusButton;
     private Button minusButton;
     private Float rat = 0f;
+    private AdView mAdView;
 
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
@@ -37,6 +43,15 @@ public class NewReviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_review);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.reviewAd);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         backButton  = (Button)   findViewById(R.id.backButton);
         writeButton = (Button)   findViewById(R.id.scrieButton);
@@ -248,6 +263,7 @@ public class NewReviewActivity extends AppCompatActivity {
     public void ohShitGoBaaack(){
         Intent intent = new Intent(this, RecenziiActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void onBackPressed() {

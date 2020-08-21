@@ -11,6 +11,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -21,6 +27,7 @@ public class HomeActivity extends AppCompatActivity {
     private TextView status;
     private TextView dayView;
     private int state = 1; // 1 - HIDDEN | 2 - VISIBLE
+    private AdView mAdView;
 
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
@@ -28,6 +35,15 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.homeAd);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         status  = (TextView) findViewById(R.id.clockText);
         dayView = (TextView) findViewById(R.id.clockHour);
@@ -146,9 +162,10 @@ public class HomeActivity extends AppCompatActivity {
         view.setVisibility(View.GONE);
     }
 
-    public void onBackPressed() {
+    /*public void onBackPressed() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-    }
+        finish();
+    }*/
 
 }

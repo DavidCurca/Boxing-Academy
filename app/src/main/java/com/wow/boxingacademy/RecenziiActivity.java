@@ -232,11 +232,13 @@ public class RecenziiActivity extends AppCompatActivity {
     public void openNewReview(){
         Intent intent = new Intent(this, NewReviewActivity.class);
         startActivity(intent);
+        finish();
     }
 
-    public void onBackPressed() {
+    /*public void onBackPressed() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-    }
+        finish();
+    }*/
 
 }
