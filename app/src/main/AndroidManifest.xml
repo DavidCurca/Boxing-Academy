@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wow.boxingacademy">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/pba_icon"
@@ -12,13 +9,13 @@
         android:roundIcon="@mipmap/pba_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ShortActivity"></activity>
 
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8713196903791104~9804159712"/>
+        <activity android:name=".openVideoActivity" />
 
-        <activity android:name=".openVideoActivity"></activity>
-        <activity android:name=".openPhotoActivity" />
+        <activity
+            android:name=".openPhotoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
         <activity android:name=".GallleryActivity" />
         <activity android:name=".NewReviewActivity" />
         <activity android:name=".RecenziiActivity" />
@@ -30,10 +27,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8713196903791104~9804159712" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

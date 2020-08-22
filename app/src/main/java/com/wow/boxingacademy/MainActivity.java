@@ -9,6 +9,7 @@ import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.android.gms.ads.AdRequest;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout label2;
     private LinearLayout label3;
     private LinearLayout label4;
+    private ImageView shortImage;
     private AdView mAdView;
 
     @SuppressLint("SourceLockedOrientationActivity")
@@ -40,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
         mAdView = findViewById(R.id.mainAd);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+        shortImage = (ImageView) findViewById(R.id.shortImage);
+        shortImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openShortActivity();
+            }
+        });
 
         label1 = (LinearLayout) findViewById(R.id.label1);
         label2 = (LinearLayout) findViewById(R.id.label2);
@@ -96,6 +106,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openGalleryActivity(){
         Intent intent = new Intent(this, GallleryActivity.class);
+        startActivity(intent);
+    }
+
+    public void openShortActivity(){
+        Intent intent = new Intent(this, ShortActivity.class);
         startActivity(intent);
     }
 

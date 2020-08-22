@@ -6,8 +6,10 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -17,33 +19,41 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class openPhotoActivity extends AppCompatActivity {
     private AdView mAdView;
+    int photoFlags[] = {0, 2, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2};
+    int flag, num;
+    float x1,x2;
 
-    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_open_photo);
 
-        ImageView imageView = (ImageView) findViewById(R.id.imageView45);
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.photoAd);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         Intent intent = getIntent();
-        int num = intent.getIntExtra("numePhoto", 0);
-        int flag = intent.getIntExtra("flag", 0);
-        if(flag == 1){
+        num = intent.getIntExtra("numePhoto", 0);
+        flag = intent.getIntExtra("flag", 0);
+        LoadImage(num, flag);
+    }
+
+    @SuppressLint("SourceLockedOrientationActivity")
+    public void LoadImage(int n, int f){
+        if(f == 1){
             this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-            MobileAds.initialize(this, new OnInitializationCompleteListener() {
-                @Override
-                public void onInitializationComplete(InitializationStatus initializationStatus) {
-                }
-            });
-            mAdView = findViewById(R.id.photoAd);
             mAdView.setVisibility(View.VISIBLE);
-            AdRequest adRequest = new AdRequest.Builder().build();
-            mAdView.loadAd(adRequest);
         }else{
             this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+            mAdView.setVisibility(View.INVISIBLE);
         }
-
-        switch(num){
+        ImageView imageView = (ImageView) findViewById(R.id.imageView45);
+        switch(n){
             case 1:
                 imageView.setImageResource(R.drawable.whole1);
                 break;
@@ -86,6 +96,42 @@ public class openPhotoActivity extends AppCompatActivity {
             default:
                 break;
         }
-
     }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event)
+    {
+        switch(event.getAction())
+        {
+            case MotionEvent.ACTION_DOWN:
+                x1 = event.getX();
+                break;
+            case MotionEvent.ACTION_UP:
+                x2 = event.getX();
+                float deltaX = x2 - x1;
+
+                if (Math.abs(deltaX) > 70) {
+                    if (x2 > x1) {
+                        /// +
+                        if(num != 1){
+                            num--;
+                            LoadImage(num, photoFlags[num]);
+                        }
+                    }
+                    else
+                    {
+                        /// -
+                        if(num != 13){
+                            num++;
+                            LoadImage(num, photoFlags[num]);
+                        }
+                    }
+
+                }
+                else { }
+                break;
+        }
+        return super.onTouchEvent(event);
+    }
+
 }
