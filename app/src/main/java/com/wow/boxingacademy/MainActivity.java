@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openLocationActivity(){
-        String urlString = "https://www.google.com/maps/dir/44.3372035,23.7832628/44.3205782,23.8060641/@44.3199514,23.7967884,16z/data=!4m4!4m3!1m1!4e1!1m0";
+        String urlString = "https://www.google.com/maps/place/44%C2%B018'22.4%22N+23%C2%B048'09.6%22E/@44.3062222,23.800478,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d44.3062099!4d23.8026678";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlString));
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.setPackage("com.android.chrome");
